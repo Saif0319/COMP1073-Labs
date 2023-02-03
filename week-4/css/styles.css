@@ -1,0 +1,47 @@
+@charset "utf-8";
+html {
+	font-family: sans-serif;
+	font-size: 200%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+button {
+	padding: 10px 25px;
+	cursor: pointer;
+	background-color: red;
+	color: white;
+	border-radius: 5px;
+	border: none;
+}
+
+button:hover {
+	background-color: rgb(225, 0, 0);
+}
+
+.img-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.unlaunched-rocket {
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+
+.rocket {
+	position: absolute;
+	bottom: 0;
+	animation-name: rocket;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes rocket {
+	from {transform: translateY(1000px)}
+
+	to {transform: translateY(-1000px)}
+}
